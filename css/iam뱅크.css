@@ -1,0 +1,741 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* 링크걸어도 색 먹히게함 */
+}
+
+
+body {
+    background-color: rgb(240, 240, 240);
+
+}
+
+.ab {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    position: relative;
+}
+.chack {
+    display: flex;
+    cursor: pointer;
+}
+.name {
+    width: 79%;
+    color: rgb(73, 73, 73);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 500;
+
+    
+}
+.name img{
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 50%;
+    margin-top: 3px;
+    cursor: pointer;
+}
+.chack {
+    margin-top: 5px;
+}
+.chack .down {
+    position: relative;
+    transform: rotate(0deg);
+    left: 5px;
+    cursor: pointer;
+}
+.chack .down.on {
+    transform: rotate(180deg);
+}
+#line img {
+    display: block;
+    width: 1px; height: 10px;
+    margin-top: 5px;
+}
+/* .name .check::after {
+    content: '';
+    position: absolute;
+    /* ::after은 인라인 요소라서 position: absolute;안주면 안됨 */
+/* } */ 
+
+.body {
+    background-color: rgb(247, 247, 247);
+}
+header {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(10deg, rgb(0, 153, 140) 0% 40%, rgb(199, 250, 140));
+    color: white;
+    position: relative;
+    /* display: none; */
+}
+
+.o {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+}
+.Asset {
+    width: 110px;
+    height: 100px;
+    display: none;
+    position: relative;
+    top: -1px; right: 118px; 
+}
+.con img {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+.con {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    top: -78px; left: 15px;
+    color: rgb(73, 73, 73);
+}
+.coco {
+    display: flex;
+
+}
+.cocoa {
+    display: flex;
+}
+#cona {
+    font-size: 14px;
+    color: rgb(94, 94, 94);
+}
+#conb {
+    font-size: 14px;
+    color: rgb(94, 94, 94);
+}
+.h {
+    width: 50px;
+    height: 25px;
+}
+
+.o p {
+    font-size: 28px;
+    margin-left: 7px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+    color: white;
+    margin: 40px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+header ul li:hover {
+    text-decoration: underline;
+}
+
+header .aa {
+    display: flex;
+    margin-left: 180px;
+}
+
+header .a {
+    border-radius: 6px 0 0 6px;
+    padding: 7px;
+    padding-left: 10px;
+    background: none;
+    border: 1px solid #fff;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+header .b {
+    border-radius: 0 6px 6px 0;
+    padding: 7px;
+    padding-left: 10px;
+    background: none;
+    border: 1px solid #fff;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+header .a:hover {
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 6px 0 0 6px;
+}
+
+header .b:hover {
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 0 6px 6px 0;
+}
+
+.i {
+    display: flex;
+    gap: 10px;
+    margin-left: 5px;
+}
+
+.ii {
+    margin-left: 15px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.ii:hover {
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.iii {
+    gap: 20px;
+    margin-top: 1px;
+    padding: 9px;
+    width: 42px;
+    height: 42px;
+}
+
+.iii:hover {
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 50%;
+    padding: 9px;
+}
+
+
+
+
+
+
+
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+main .c {
+    width: 100%;
+    height: 370px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 15px -2px rgb(194, 194, 194);
+    margin-top: 25px;
+    position: relative;
+}
+
+main .swiper-slide.one {
+    width: 100%;
+    height: 370px;
+    border-radius: 30px;
+    background: white url(../image/iam\ bank.png)no-repeat center right;
+}
+
+main .swiper-slide.one .h1 {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 110px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+main .swiper-slide.one .h4 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+    top: 20%;
+    left: 7%;
+    margin-left: 5px;
+}
+
+main .swiper-slide.one .co {
+    position: absolute;
+    font-size: 22px;
+    font-weight: 400;
+    top: 50%;
+    left: 7%;
+    color: rgb(95, 95, 95);
+}
+
+main .swiper-slide.one .coo {
+    position: absolute;
+    top: 60%;left: 6%;
+    font-size: 17px;
+    font-weight: 430;
+    margin-left: 16px;
+    color: rgb(0, 90, 207);
+}
+main .swiper-slide.one .coo:hover {
+    text-decoration: underline;
+}
+
+main .swiper-slide.two {
+    width: 100%;
+    height: 370px;
+    border-radius: 30px;
+    background: white url(../image/iam\ bank2.png)no-repeat center right;
+}
+main .swiper-slide.two .h1 {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 110px;
+    font-size: 50px;
+    font-weight: 500;
+}
+main .swiper-slide.two .h4 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+    top: 20%;
+    left: 7%;
+    margin-left: 5px;
+}
+main .swiper-slide.two .ct {
+    position: absolute;
+    font-size: 22px;
+    font-weight: 400;
+    top: 50%;
+    left: 7%;
+    color: rgb(95, 95, 95);
+}
+main .swiper-slide.two .ctt {
+    position: absolute;
+    font-size: 17px;
+    font-weight: 430;
+    top: 60%;
+    left: 6%;
+    margin-left: 16px;
+    color: rgb(0, 90, 207);
+}
+main .swiper-slide.two .ctt:hover {
+    text-decoration: underline;
+}
+
+
+main .swiper-slide.three {
+    width: 100%;
+    height: 370px;
+    border-radius: 30px;
+    background: white url(../image/iam\ bank3.png)no-repeat center right;
+}
+main .swiper-slide.three .h1 {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 110px;
+    font-size: 50px;
+    font-weight: 500;
+}
+main .swiper-slide.three .h4 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+    top: 20%;
+    left: 7%;
+    margin-left: 5px;
+}
+main .swiper-slide.three .ch {
+     position: absolute;
+    font-size: 22px;
+    font-weight: 400;
+    top: 50%;
+    left: 7%;
+    color: rgb(95, 95, 95);
+}
+main .swiper-slide.three .chh {
+    position: absolute;
+    font-size: 17px;
+    font-weight: 430;
+    top: 60%;
+    left: 6%;
+    margin-left: 16px;
+    color: rgb(0, 90, 207);
+}
+main .swiper-slide.three .chh:hover {
+    text-decoration: underline;
+}
+
+
+main .swiper-slide.four {
+    width: 100%;
+    height: 370px;
+    border-radius: 30px;
+    background: white url(../image/iam\ bank4.png)no-repeat center right;
+}
+main .swiper-slide.four .h1 {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 110px;
+    font-size: 50px;
+    font-weight: 500;
+}
+main .swiper-slide.four .h4 {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 500;
+    top: 20%;
+    left: 7%;
+    margin-left: 5px;
+}
+main .swiper-slide.four .cp {
+     position: absolute;
+    font-size: 22px;
+    font-weight: 400;
+    top: 50%;
+    left: 7%;
+    color: rgb(95, 95, 95);
+}
+main .swiper-slide.four .cpp {
+    position: absolute;
+    font-size: 17px;
+    font-weight: 430;
+    top: 60%;
+    left: 6%;
+    margin-left: 16px;
+    color: rgb(0, 90, 207);
+}
+main .swiper-slide.four .cpp:hover {
+    text-decoration: underline;
+}
+
+
+main .d {
+    width: 100%;
+    height: 85px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px -2px rgb(194, 194, 194);
+    margin-top: 25px;
+    position: relative;
+}
+
+.d ul {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.d ul li {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.d ul li:hover {
+    color: rgb(0, 90, 207);
+}
+
+.e {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.e .inner {
+    width: 400px;
+    height: 135px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px -2px rgb(194, 194, 194);
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.ea {
+    display: flex;
+    flex-direction: column;
+}
+.eb {
+    font-size: 16px;
+    font-weight: 700;
+}
+.ec {
+    font-size: 13px;
+    font-weight: 500;
+}
+.e .inner:hover {
+    background-color: rgb(43, 93, 255);
+    color: white;
+}
+
+.f {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.ff {
+    
+    width: 675px;
+    height: 290px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px -2px rgb(194, 194, 194);
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fff {
+    margin-top: 60px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 90, 207);
+    cursor: pointer;
+}
+.fff div {
+    display: flex;
+}
+#pa {
+    color: #a1a1a1;
+    position: relative;
+    left: 25px; top: -5px;
+    /* display: none; */
+}
+#pb {
+    color: rgb(0, 90, 207);
+    position: relative;
+    left: 1px; top: -5px;
+    /* display: none; */
+}
+.ffff {
+    margin-top: 20px;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+}
+
+.ffff li {
+    margin-bottom: 10px;
+}
+
+.ffff li:hover {
+    text-decoration: underline;
+
+}
+#uuo {
+    text-decoration: underline;
+    cursor: pointer;
+    position: relative;
+    top: -5px;
+    font-size: 15px;
+}
+.uuoo {
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+}
+
+.fd {
+    margin-top: 60px;
+    margin-right: 50px;
+    text-align: end;
+    color: rgb(112, 112, 112);
+    font-weight: 500;
+    display: block;
+}
+
+.fd li {
+    margin-top: 15px;
+    color: rgb(112, 112, 112);
+    font-size: 14px;
+}
+
+.gg {
+    width: 40%;
+    height: 290px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px -2px rgb(194, 194, 194);
+    margin-top: 25px;
+    position: relative;
+}
+.gg .title {
+    position: absolute;
+    top: 20%; left: 10%;
+    font-size: 20px;
+    font-weight: 600;
+}
+.ggg {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 37%; left: 50%;
+    transform: translate(-50%);
+}
+.gg ul {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 210px;
+    gap: 20px;
+}
+.ga {
+    margin-top: -5px;
+}
+.gg .ua {
+    margin-left: 30px;
+}
+.gg .ub {
+    margin-left: 60px;
+}
+.gg .uc {
+    margin-left: 40px;
+}
+.pl {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+    
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+footer .j {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 13px;
+    color: rgb(112, 112, 112);
+    margin-top: 25px;
+
+    border-top: 0.5px solid rgb(230, 230, 230);
+    border-bottom: 0.5px solid rgb(231, 231, 231);
+    font-weight: 500;
+}
+footer .j li {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+footer .j .ji {
+    font-weight: 800;
+    color: black;
+}
+footer .j .jh {
+    font-weight: 800;
+    color: rgb(38, 160, 144);
+}
+footer .u {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer .jj {
+    margin-top: 20px;
+}
+footer .l {
+    display: flex;
+    font-size: 14px;
+    gap: 15px;
+    margin-top: 5px;
+}
+footer .k {
+    display: flex;
+    font-size: 8px;
+}
+footer .k img {
+    width: 45px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+footer .k p {
+    font-size: 13px;
+    margin-top: 8px;
+    color: rgb(77, 77, 77);
+}
+footer .jjj {
+    margin-top: 25px;
+}
+footer .jjj .imgf {
+    margin-left: 180px;
+    margin-bottom: 10px;
+}
+footer .jjj img {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    padding: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 50%;
+}
+.group {
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid #dadada;
+}
+
+@media screen and (max-width : 768px) {
+    
+}
+/* ==================================================
+   수정: 푸터 iM금융그룹 / 관련사이트 펼침 메뉴
+   원래 푸터 레이아웃은 유지하고 select 두 개만 교체
+   ================================================== */
+footer .jjj > div:last-child {display:flex;gap:8px;align-items:center;}
+.footer-family {position:relative;width:180px;flex-shrink:0;color:#666;font-size:13px;}
+.footer-family#site {width:200px;}
+.footer-family summary {display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:36px;padding:0 13px;border:1px solid #dadada;border-radius:5px;background:#fff;cursor:pointer;list-style:none;box-sizing:border-box;}
+.footer-family summary::-webkit-details-marker {display:none;}
+.footer-family summary::marker {content:"";}
+.footer-family-arrow {display:block;width:7px;height:7px;border-right:1px solid #777;border-top:1px solid #777;transform:rotate(-45deg);margin-top:4px;}
+.footer-family[open] summary {border-color:#777;}
+.footer-family[open] .footer-family-arrow {transform:rotate(135deg);margin-top:-4px;}
+.footer-family-panel {position:absolute;bottom:calc(100% + 5px);left:0;right:0;border:1px solid #888;border-radius:4px;background:#fff;box-shadow:0 3px 12px #00000014;z-index:100;overflow:hidden;}
+.footer-family-heading {margin:0;padding:12px 13px;font-weight:700;color:#333;border-bottom:1px solid #ddd;background:#f7f7f7;}
+.footer-family-panel ul {list-style:none;margin:0;padding:5px 0;max-height:260px;overflow-y:auto;scrollbar-width:thin;}
+.footer-family-panel li {margin:0;padding:0;}
+.footer-family-panel button {display:block;width:100%;min-height:31px;padding:7px 13px;border:0;background:#fff;color:#666;font:inherit;line-height:1.4;text-align:left;cursor:pointer;}
+.footer-family-panel button:hover,.footer-family-panel button:focus-visible {background:#f2f5f5;color:#00998a;}
+.footer-family summary:focus-visible {outline:2px solid #00998a;outline-offset:2px;}
+@media screen and (max-width:768px) {
+ footer .jjj > div:last-child {flex-wrap:wrap;}
+ .footer-family,.footer-family#site {width:180px;}
+}
+
+/* 캡처 기준 보정: 원본처럼 제목 없이 전체 목록이 위로 펼쳐짐 */
+footer .footer-family,
+footer .footer-family#site {width:202px;}
+footer .footer-family summary {min-height:36px;border-color:#d0d0d0;border-radius:6px;font-size:13px;color:#666;}
+footer .footer-family[open] summary {border-top-color:transparent;border-radius:0 0 6px 6px;}
+footer .footer-family-panel {bottom:100%;border:1px solid #d0d0d0;border-bottom:0;border-radius:6px 6px 0 0;box-shadow:none;}
+footer .footer-family-heading {display:none;}
+footer .footer-family-panel ul {max-height:none;overflow:visible;padding:10px 0 4px;}
+footer .footer-family-panel button {min-height:0;padding:4px 14px;font-size:13px;line-height:18px;font-weight:600;color:#666;}
+footer .footer-family-panel button:hover,
+footer .footer-family-panel button:focus-visible {background:#f5f5f5;color:#333;}
